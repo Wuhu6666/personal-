@@ -1,0 +1,92 @@
+<html>
+<head>
+    <title>母亲节快乐</title>
+    <br><br><br><br><br><br><br>
+    <h1>Happy Mothers' Day</h1>
+    <p class='title'>母亲节特别活动</p>
+</head>
+
+<div class='pet'>
+    <audio id="audio" autoplay="autoplay" loop="loop" preload="auto" src="bgm.mp3"> </audio>
+    <body style="text-align: center">
+        <br><br>
+        
+        <p>为了感谢您一直以来的付出与奉献，2021母亲节组委会特此为您举办了趣味抽奖活动。</p>
+        <p>请点击下方蓝色按钮，随机抽取奖品。限抽三次，请截图发给组委会领取奖励。</p>
+        <p>奖品虽小泛善可陈，但胜在一番小小小心意。</p>
+        <p>最后祝愿您能愉快每一天，心想事成诸事顺吉！</p>
+        
+    <script>
+        alert("恭喜您被选中参加母亲节幸运活动！")
+        function f() {
+           var a=["来自王义涵的深情一吻","免费奴役王义涵一周","让可爱的李义滢亲你一口","没收王义涵所有的money","美女李义滢的按摩券","李义滢请客去shopping","用户自定义券X1"];
+          var   i=Math.floor(Math.random()*a.length);
+           document.getElementById('place').innerText=a[i];
+        }
+    </script>
+    <br><button onclick="f()">抽取一个幸运礼物：</button>
+    <br><br>
+    <div id="place"></div>
+</div>
+</body>
+
+<style>
+    button{
+    position: absolute;
+	background-color: #639dd4;
+	border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+	font-family:YouYuan;
+	border-radius: 8px;
+	top:570px;
+	left:615px;
+	width:300px;
+    }
+
+button:hover {
+    background-color:#6c90b3;
+}
+
+h1{
+    font-size: 50px;
+    font-family:Georgia, serif;
+}
+
+p{
+    font-size: 20px;
+}
+
+.title{
+    margin: -25px 100px;
+    font-size: 25px;
+
+} 
+    
+body{
+	background-image: url(background.jpg);
+    background-size: auto;
+    background-color: rgb(248, 248, 248);
+    background-repeat:repeat-x;
+    background-attachment: fixed;
+}
+
+div{
+    font-size: 30px;
+}
+
+.pet{
+    background-image: url(pet.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    opacity: 90%;
+}
+</style>
+
+</html>
